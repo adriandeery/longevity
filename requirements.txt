@@ -1,0 +1,32 @@
+python-dotenv
+pandas
+numpy
+certifi
+scikit-learn
+mlflow
+dvc==3.5.0
+pyaml
+dagshub
+fastapi
+uvicorn
+python-multipart
+sentence-transformers
+transformers>=4.30.0
+peft
+accelerate
+bitsandbytes
+faiss-cpu
+scispacy
+spacy
+spacy[cuda]
+scispacy[transformers]
+https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_core_sci_scibert-0.5.1.tar.gz
+# https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_core_sci_lg-0.5.1.tar.gz
+# https://huggingface.co/allenai/scispacy-models/resolve/main/en_core_sci_sm-0.5.0.tar.gz
+rdkit-pypi
+pydantic
+matplotlib
+pillow
+biopython==1.85
+
+##-e .
