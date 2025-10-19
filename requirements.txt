@@ -1,32 +1,52 @@
+# Core ML/Data
 python-dotenv
-pandas
-numpy
+pandas>=2.0.0
+numpy>=1.24.0,<2.0.0
 certifi
-scikit-learn
-mlflow
+scikit-learn>=1.3.0
+
+# ML Ops
+mlflow>=2.8.0
 dvc==3.5.0
-pyaml
+PyYAML
 dagshub
-fastapi
-uvicorn
+
+# API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
 python-multipart
-sentence-transformers
-transformers>=4.30.0
-peft
-accelerate
-bitsandbytes
-faiss-cpu
-scispacy
-spacy
-spacy[cuda]
-scispacy[transformers]
-https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_core_sci_scibert-0.5.1.tar.gz
-# https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_core_sci_lg-0.5.1.tar.gz
-# https://huggingface.co/allenai/scispacy-models/resolve/main/en_core_sci_sm-0.5.0.tar.gz
-rdkit-pypi
-pydantic
+
+# NLP & Embeddings
+sentence-transformers>=2.2.2
+transformers>=4.35.0
+tokenizers>=0.15.0
+
+# PEFT & Optimization
+peft>=0.7.0
+accelerate>=0.25.0
+bitsandbytes>=0.41.0  # Only if CUDA available
+
+# Vector Search
+faiss-cpu>=1.7.4  # Use faiss-gpu only if you have >8GB GPU
+
+# Biomedical NLP
+spacy>=3.7.0
+scispacy>=0.5.3
+https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_sm-0.5.4.tar.gz
+
+# Chemistry (optional, heavy)
+# rdkit>=2023.9.1  # Comment out if not using molecular docking
+
+# Biology
+biopython>=1.81
+
+# Utilities
+pydantic>=2.5.0
 matplotlib
 pillow
-biopython==1.85
+tqdm
+requests
 
-##-e .
+# Development
+pytest
+black
